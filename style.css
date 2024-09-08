@@ -1,36 +1,76 @@
-.game-selector > div {
-	background-color: #f1f1f1;
-	width: 100px;
-	margin: 10px;
-	text-align: center;
-	line-height: 75px;
-	font-size: 30px;
-	text-overflow: clip;
-	overflow: hidden;
-	min-width: 0px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
 }
 
-.game-selector {
-	min-width: 0;
-	display: flex;
-	flex-wrap: wrap;
-	text-overflow: clip;
-	background-color: DodgerBlue;
+header {
+    background-color: #ff6347;
+    color: white;
+    padding: 20px;
+    font-family: 'Fira Code', monospace;
 }
 
-.main-container {
-	max-width: 80%;
-	margin: auto;
+header h1 {
+    margin: 0;
 }
 
-.options-panel {
-
+main {
+    padding: 20px;
 }
 
-.options-segment {
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.options-segment > input {
-	display: block;
-	float: right;
+
+.interactive {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.box {
+    width: 400px;
+    height: 150px;
+    background-color: #87ceeb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    font-family: 'Fira Code', monospace
+    
+}
+
+.box:hover {
+    background-color: #4682b4;
+}
+
+.box:active {
+    transform: scale(0.95);
+}
+
+.fun {
+    margin-top: 30px;
+}
+
+
+footer {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
